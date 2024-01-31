@@ -1,32 +1,5 @@
 import {Article} from "./Article.ts";
 
-// export class DisplayArticles {
-//
-//     private _articlesList: Array<Article>
-//
-//
-//     constructor(articlesList: Array<Article>) {
-//         this._articlesList = articlesList;
-//     }
-//
-//     createHtml() {
-//         let content = "<table>"
-//
-//         this._articlesList.forEach(article => {
-//             content += "<tr>"
-//             content += `<td>${article.name}</td>`
-//             content += `<td>${article.price}</td>`
-//             content += `<td>${article.description}</td>`
-//             content += "</tr>"
-//         })
-//
-//         content += "</table>"
-//
-//         return content
-//     }
-//
-// }
-
 export class ArticleList {
     private articles: Article[] = [];
 

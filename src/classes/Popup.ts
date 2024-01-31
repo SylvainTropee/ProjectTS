@@ -1,17 +1,11 @@
-import {Article} from "./Article.ts";
-
 export class Popup {
-    static show(article: Article): void {
+    static show(content : string): void {
         const popupContainer = document.createElement('div');
         popupContainer.className = 'popup-container';
 
         const popupContent = document.createElement('div');
         popupContent.className = 'popup-content';
-        popupContent.innerHTML = `
-      <h2>${article.name}</h2>
-      <p><strong>Description:</strong> ${article.description}</p>
-      <p><strong>Prix:</strong> ${article.price}</p>
-    `;
+        popupContent.innerHTML = content
 
         const closeButton = document.createElement('button');
         closeButton.textContent = 'Fermer';
