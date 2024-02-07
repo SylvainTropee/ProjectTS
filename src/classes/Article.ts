@@ -1,22 +1,22 @@
 export class Article{
 
-    private _name : String
+    private _name : string
     private _price : number
-    private _description : String
+    private _description : string
 
 
-    constructor(name: String,  description: String,price: number) {
+    constructor(name: string,  description: string,price: number) {
         this._name = name;
         this._price = price;
         this._description = description;
     }
 
 
-    get name(): String {
+    get name(): string {
         return this._name;
     }
 
-    set name(value: String) {
+    set name(value: string) {
         this._name = value;
     }
 
@@ -28,11 +28,11 @@ export class Article{
         this._price = value;
     }
 
-    get description(): String {
+    get description(): string {
         return this._description;
     }
 
-    set description(value: String) {
+    set description(value: string) {
         this._description = value;
     }
 }
